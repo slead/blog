@@ -1,0 +1,34 @@
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+#main_header {
+  padding: 2.5em 5%;
+  border-bottom: 1px solid #e9e9e9;
+}
+#main_header .name {
+  float: left;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 0.75em;
+  font-weight: 700;
+  border: 2px solid #e9e9e9;
+  color: #424652;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+#main_header nav {
+  float: right;
+  padding-top: 1.4rem;
+}
+#main_header nav a {
+  text-decoration: none;
+  color: #424652;
+  font-size: 1rem;
+  margin: 0 1rem;
+}

@@ -1,0 +1,39 @@
+$dark: #424652;
+$light: #9a9da4;
+$highlight: #8bc6db;
+$border: #e9e9e9;
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+#main_header {
+  padding: 2.5em 5%;
+  border-bottom: 1px solid $border;
+  .name {
+    float: left;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: 700;
+    border: 2px solid $border;
+    color: $dark;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  nav {
+    float: right;
+    padding-top: 1.4rem;
+    a {
+      text-decoration: none;
+      color: $dark;
+      font-size: 1rem;
+      margin: 0 1rem;
+    }
+  }
+}
