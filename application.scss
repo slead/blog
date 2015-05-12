@@ -3,13 +3,69 @@ $light: #9a9da4;
 $highlight: #8bc6db;
 $border: #e9e9e9;
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper_padding {
+  padding: 4rem 0;
+}
+
 .clearfix:after {
   clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  color: $dark;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5{
+  font-size: 1.25rem;
+}
+h6{
+  font-size: 1rem;
+}
+
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+}
+
+p, ul, ol {
+  margin: 0 0 1.6em 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 #main_header {
@@ -18,7 +74,6 @@ $border: #e9e9e9;
   .name {
     float: left;
     padding: 1rem;
-    text-decoration: none;
     font-size: 0.75em;
     font-weight: 700;
     border: 2px solid $border;
@@ -37,3 +92,26 @@ $border: #e9e9e9;
     }
   }
 }
+
+#main_footer {
+  padding: 2.5em 5%;
+  border-top: 1px solid $border;
+  .copyright{
+    float: left;
+    font-size: 0.9em;
+    margin: 0;
+  }
+  .social {
+    float: right;
+    i {
+      color: $dark;
+      margin-left: 1em;
+      padding-top: 0.2em;
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+}
+
+@import 'welcome'
