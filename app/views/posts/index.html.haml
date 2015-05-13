@@ -1,7 +1,18 @@
-%h1 Posts index
-- @posts.each do |post|
-  %h4= link_to post.title, post
-  .content
-    %p=post.content
+%h1#page_title Stuff I've Written
+
+.section.group
+  .col.span_1_of_4
+  .col.span_2_of_4
+    - @posts.each do |post|
+      .post.content
+        %h4= link_to post.title, post
+        %span.date
+          = time_ago_in_words(post.created_at)
+          ago
+        .content
+          %p= truncate(post.content, length: 150)
+          %p.readmore= link_to "Read more", post
+        %hr
+  .col.span_1_of_4
 
 .btn= link_to "New post", new_post_path

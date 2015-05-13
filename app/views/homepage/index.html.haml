@@ -2,15 +2,15 @@
   .col.span_2_of_4.homepage_content
     .content
       %h2 About
-      %hr
+      %hr.short
       %p Maecenas faucibus mollis Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
       %p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
         
   .col.span_1_of_4.homepage_content
     .content
-      %h2 Stuff I've written
-      %hr
+      %h2= link_to "Stuff I've written", posts_path
+      %hr.short
       -@posts.each do |post|
         %h3.title= link_to post.title, post
         %p.date
@@ -22,7 +22,7 @@
   .col.span_1_of_4.homepage_content
     .content
       %h2 Stuff I've built
-          
+      %hr.short    
         
       
     
