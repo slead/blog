@@ -1,5 +1,7 @@
 %h1 Posts index
 - @posts.each do |post|
-  %h4= post.title
+  %h4= link_to post.title, post
   .content
     %p=post.content
+
+.btn= link_to "New post", new_post_path
