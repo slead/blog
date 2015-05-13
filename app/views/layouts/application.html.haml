@@ -6,6 +6,7 @@
   = javascript_include_tag 'application', 'data-turbolinks-track' => true
   = csrf_meta_tags
 %body
+  .logo= link_to "Home", root_path
 
   .notifications
   - if notice
@@ -18,5 +19,5 @@
       %p.alert.alert-dismissable= alert
       %span.close{type: "button", data: {dismiss:"alert"}}
         %i.fa.fa-times
-              
+
   = yield
