@@ -65,8 +65,12 @@ a {
   text-decoration: none;
 }
 
+.content {
+  margin: 0 15px;
+}
+
 #main_header {
-  padding: 2.5em 5%;
+  padding: 2.5em 0;
   border-bottom: 1px solid #e9e9e9;
 }
 #main_header .name {
@@ -111,20 +115,6 @@ a {
   color: #8bc6db;
 }
 
-.col-1, .col-2, .col-3 {
-  float: left;
-}
-
-.col-1 {
-  width: 45%;
-  padding: 0 5% 0 2.5%;
-}
-
-.col-2, .col-3 {
-  width: 27.5%;
-  padding: 0 2.5%;
-}
-
 .homepage_content h2 {
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -153,13 +143,4 @@ a {
   font-size: 0.8em;
   margin-bottom: 2em;
   color: #9a9da4;
-}
-
-.about {
-  padding: 0 7.5% 0 0;
-}
-.about a {
-  color: #8bc6db;
-  font-weight: bold;
-  text-decoration: none;
 }
