@@ -17,6 +17,7 @@
           = time_ago_in_words(post.created_at)
           ago
         %p.summary= truncate(post.content, length: 150)
+      %p.more= link_to "See all articles", posts_path
           
   .col.span_1_of_4.homepage_content
     .content
