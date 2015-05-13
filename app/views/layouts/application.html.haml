@@ -14,11 +14,6 @@
         %header#main_header.col.span_4_of_4
           .content
             = link_to "Your name", root_path,  {class: "name"}
-            %fieldset#show-menu
-              %span.checkbox-wrapper
-                %input{ :type=>"checkbox" }
-                %span
-                  %label A Checkbox
             %nav 
               =link_to "Articles", posts_path
               =link_to "Projects", posts_path
