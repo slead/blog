@@ -1,0 +1,130 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper_padding {
+  padding: 4rem 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  color: #424652;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+}
+
+p, ul, ol {
+  margin: 0 0 1.6em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  margin: 0 15px;
+}
+
+#main_header {
+  padding: 2.5em 0;
+  border-bottom: 1px solid #e9e9e9;
+  .name {
+    float: left;
+    padding: 1rem;
+    font-size: 0.75em;
+    font-weight: 700;
+    border: 2px solid #e9e9e9;
+    color: #424652;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  nav {
+    float: right;
+    padding-top: 1.4rem;
+    a {
+      text-decoration: none;
+      color: #424652;
+      font-size: 1rem;
+      margin: 0 1rem;
+    }
+  }
+}
+
+#main_footer {
+  padding: 2.5em 5%;
+  border-top: 1px solid #e9e9e9;
+  .copyright {
+    font-size: 0.9em;
+    margin: 0;
+  }
+  .social {
+    i {
+      color: #424652;
+      margin-left: 1em;
+      padding-top: 0.2em;
+      &:hover {
+        color: #8bc6db;
+      }
+    }
+  }
+}

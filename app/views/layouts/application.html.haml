@@ -1,23 +1,34 @@
 !!!
 %html
-%head
-  %title Unicasts Blog
-  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-  = javascript_include_tag 'application', 'data-turbolinks-track' => true
-  = csrf_meta_tags
-%body
-  .logo= link_to "Home", root_path
+  %head
+    %title Unicasts Blog
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    %link{rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"}
+    %link{rel: "stylesheet", href: "http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"}
+    %link{rel: "stylesheet", href: "http://fonts.googleapis.com/css?family=Raleway:400,700"}
+    = csrf_meta_tags
+  %body
+    .section.group
+      .col.span_4_of_4
+        %header#main_header.col.span_4_of_4
+          .content
+            = link_to "Your name", root_path,  {class: "name"}
+            %nav 
+              =link_to "Articles", posts_path
+              =link_to "Projects", posts_path
+              =link_to "Contact", posts_path
 
-  .notifications
-  - if notice
-    #notice_wrapper
-      %p.alert.alert-dismissable= notice
-      %span.close{type: "button", data: {dismiss:"alert"}}
-        %i.fa.fa-times
-  - elsif alert
-    #alert_wrapper
-      %p.alert.alert-dismissable= alert
-      %span.close{type: "button", data: {dismiss:"alert"}}
-        %i.fa.fa-times
+    .notifications
+    - if notice
+      #notice_wrapper
+        %p.alert.alert-dismissable= notice
+        %span.close{type: "button", data: {dismiss:"alert"}}
+          %i.fa.fa-times
+    - elsif alert
+      #alert_wrapper
+        %p.alert.alert-dismissable= alert
+        %span.close{type: "button", data: {dismiss:"alert"}}
+          %i.fa.fa-times
 
-  = yield
+    = yield
