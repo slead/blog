@@ -1,0 +1,12 @@
+%h1#page_title Say hello
+
+.section.group#posts
+  .col.span_1_of_4
+  .col.span_2_of_4
+    = simple_form_for(@contact, html: { class: 'form' })  do |f|
+      =f.input :name,  input_html: { class: 'form-control' }, placeholder: "Your name", required: true
+      =f.input :email, input_html: { class: 'form-control'}, placeholder: 'Your email', required: true
+      =f.text_area :message, input_html: { class: 'form-control'}, placeholder: 'Enter your message', required: true
+      .hidden
+        =f.input :nickname, input_html: { class: 'form-control'}, placeholder: 'leave this blank'
+      =f.submit 'Send message', class: "btn btn-warning"

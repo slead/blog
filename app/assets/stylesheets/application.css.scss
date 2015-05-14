@@ -22,6 +22,10 @@ body {
   display: table;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Style the forms and form elements, including Devise*/
 input, textarea {
   width: 100%;
