@@ -16,6 +16,7 @@ gem 'simple_form', '~> 3.1.0'
 gem "font-awesome-rails"
 gem 'redcarpet', '~> 3.2.3'
 gem 'pygments.rb', '~> 0.6.3'
+gem 'friendly_id', '~> 5.1.0'
 
 group :development do
   gem 'sqlite3'
