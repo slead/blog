@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :contacts, only: [:new, :create]
 
+  match '/contact' => "contacts#new", via: [:get, :post]
+  
   root 'homepage#index'
 end
