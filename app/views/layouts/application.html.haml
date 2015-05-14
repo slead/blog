@@ -31,15 +31,12 @@
 
     = yield
 
-  %footer
-    %ul
+  %footer#main_footer
     - if user_signed_in?
-      %li
-        = link_to "edit", edit_user_registration_path
-      %li
-        = link_to 'logout', destroy_user_session_path, method: :delete
+      %p.user
+        = link_to destroy_user_session_path, method: :delete, class: "light" do
+          %i.fa.fa-user
     - else
-      %li
-        = link_to "Sign In", new_user_session_path
-      %li
-        = link_to "Sign Up", new_user_registration_path, class: "button"
+      %p.user
+        = link_to new_user_session_path, class: "dark" do
+          %i.fa.fa-user

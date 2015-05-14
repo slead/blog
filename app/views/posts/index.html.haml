@@ -16,4 +16,5 @@
   .col.span_1_of_4
 
 - if user_signed_in?
-  .btn= link_to "New post", new_post_path
+  = link_to new_post_path, class: "light btn-edit" do
+    %i.fa.fa-pencil-square-o

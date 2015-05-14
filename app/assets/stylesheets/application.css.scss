@@ -76,6 +76,10 @@ a {
   color: $light;
 }
 
+.dark {
+  color: $dark;
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -87,6 +91,11 @@ a {
 .date {
   font-size: 0.8em;
   color: $light;
+}
+
+.btn-edit {
+  position: absolute;
+  right: 10px;
 }
 
 hr {
