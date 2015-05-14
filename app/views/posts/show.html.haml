@@ -1,12 +1,15 @@
-.content
-  %h4= @post.title
-  %p= @post.content
-  = link_to posts_path, class: "btn" do
-    %i.fa.fa-angle-double-left.highlight
-    Back to articles
+.section.group#posts
+  .col.span_1_of_4
+  .col.span_2_of_4
+    .content.single_post
+      %h4= @post.title
+      %p= @post.content
+    = link_to posts_path, class: "btn" do
+      %i.fa.fa-angle-double-left.highlight
+      Back to articles
 
-  - if user_signed_in? && @post.user_id == current_user.id
-    = link_to edit_post_path(@post), class: "light btn-edit" do
-      %i.fa.fa-pencil-square-o
-    = link_to post_path(@post), method: :delete, class: "light btn-delete", data: {confirm: "Are you sure you want to delete this post?"} do
-      %i.fa.fa-times
+      - if user_signed_in? && @post.user_id == current_user.id
+        = link_to edit_post_path(@post), class: "light btn-edit" do
+          %i.fa.fa-pencil-square-o
+        = link_to post_path(@post), method: :delete, class: "light btn-delete", data: {confirm: "Are you sure you want to delete this post?"} do
+          %i.fa.fa-times
