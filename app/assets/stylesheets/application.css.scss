@@ -22,17 +22,12 @@ body {
   display: table;
 }
 
-.wrapper {
-  width: 90%;
-  margin: 0 auto;
+/* Style the forms and form elements, including Devise*/
+input {
+  max-width: 100%;
 }
-
-.wrapper_padding {
-  padding: 4rem 0;
-}
-
-.clearfix:after {
-  clear: both;
+.input, .form-actions, .devise_shared {
+  margin: 1em;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -86,7 +81,7 @@ a {
 }
 
 .content {
-  margin: 0 15px;
+  margin: 0 25px;
 }
 .date {
   font-size: 0.8em;
