@@ -16,5 +16,7 @@
   .col.span_1_of_4
 
 - if user_signed_in?
+  = link_to destroy_user_session_path, method: :delete, class: "light btn-user" do
+    %i.fa.fa-user
   = link_to new_post_path, class: "light btn-edit" do
     %i.fa.fa-pencil-square-o

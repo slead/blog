@@ -32,11 +32,11 @@
     = yield
 
   %footer#main_footer
-    - if user_signed_in?
-      %p.user
-        = link_to destroy_user_session_path, method: :delete, class: "light" do
-          %i.fa.fa-user
-    - else
-      %p.user
-        = link_to new_user_session_path, class: "dark" do
-          %i.fa.fa-user
+    %p.copyright &copy; 2015 Your Name
+    %nav.social 
+      = link_to "#" do
+        %i.fa.fa-twitter
+      = link_to "#" do
+        %i.fa.fa-linkedin, 
+      = link_to "#" do
+        %i.fa.fa-google-plus

@@ -1,7 +1,9 @@
 .content
   %h4= @post.title
   %p= @post.content
-  .btn= link_to "Back to Posts", posts_path
+  = link_to posts_path, class: "btn" do
+    %i.fa.fa-angle-double-left.highlight
+    Back to articles
 
   - if user_signed_in? && @post.user_id == current_user.id
     = link_to edit_post_path(@post), class: "light btn-edit" do

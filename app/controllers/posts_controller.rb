@@ -29,6 +29,14 @@ class PostsController < ApplicationController
   def edit
   end
 
+  def update
+    if @post.update(post_params)
+      redirect_to @post
+    else
+      render 'edit'
+    end
+  end
+
   def show
   end
 

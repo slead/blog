@@ -24,11 +24,14 @@ body {
 }
 
 /* Style the forms and form elements, including Devise*/
-input {
-  max-width: 100%;
+input, textarea {
+  width: 100%;
 }
 .input, .form-actions, .devise_shared {
   margin: 1em;
+}
+.btn {
+  max-width: 150px;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -80,6 +83,10 @@ a {
   color: $dark;
 }
 
+.highlight {
+  color: $highlight;
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -96,6 +103,11 @@ a {
 .btn-edit {
   position: absolute;
   right: 10px;
+}
+
+.btn-user {
+  position: absolute;
+  right: 50px;
 }
 
 hr {
@@ -140,10 +152,12 @@ hr.short {
   padding: 2.5em 5%;
   border-top: 1px solid $border;
   .copyright {
+    float: left;
     font-size: 0.9em;
     margin: 0;
   }
   .social {
+    float: right;
     i {
       color: $dark;
       margin-left: 1em;
