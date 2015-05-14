@@ -2,3 +2,7 @@
   %h4= @post.title
   %p= @post.content
   .btn= link_to "Back to Posts", posts_path
+
+  - if @post.user_id == current_user.id
+    = link_to edit_post_path(@post), class: "data" do
+      %i.fa.fa-pencil-square-o

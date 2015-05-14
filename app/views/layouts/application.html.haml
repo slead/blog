@@ -31,3 +31,16 @@
           %i.fa.fa-times
 
     = yield
+
+  %footer
+    %ul
+    - if user_signed_in?
+      %li
+        = link_to "edit", edit_user_registration_path
+      %li
+        = link_to 'logout', destroy_user_session_path, method: :delete
+    - else
+      %li
+        = link_to "Sign In", new_user_session_path
+      %li
+        = link_to "Sign Up", new_user_registration_path, class: "button"
