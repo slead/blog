@@ -3,7 +3,7 @@
   .col.span_2_of_4
     .content.single_post
       %h4= @post.title
-      %p= @post.content
+      %p= markdown @post.content
     = link_to posts_path, class: "btn" do
       %i.fa.fa-angle-double-left.highlight
       Back to articles
