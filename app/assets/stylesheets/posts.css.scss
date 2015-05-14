@@ -11,7 +11,6 @@
 }
 
 .post {
-  text-align: center;
   h4 {
     margin: 1.6rem 0 0 0;
     a {
@@ -21,8 +20,16 @@
       }
     }
   }
-  .readmore {
-    color: #727272;
-    font-size: 0.65rem;
+}
+
+#posts {
+  /*Individual posts on the Posts index page*/
+  .post {
+    text-align: center;
+    .readmore {
+      color: #727272;
+      font-size: 0.65rem;
+    }
   }
 }
+

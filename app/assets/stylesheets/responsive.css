@@ -32,8 +32,8 @@
   width: 23.12%;
 }
 
-/*  GO FULL WIDTH BELOW 768 PIXELS */
-@media only screen and (max-width: 768px) {
+/*  GO FULL WIDTH BELOW 1023 PIXELS */
+@media only screen and (max-width: 1023px) {
   .col {  margin: 1% 0 1% 0%; }
   .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
 }
