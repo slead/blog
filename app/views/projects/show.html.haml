@@ -3,10 +3,10 @@
   .col.span_2_of_4
     .content.single_project
       %h4= @project.title
-      %p= markdown @project.content
+      %p= markdown @project.description
     = link_to projects_path, class: "btn" do
       %i.fa.fa-angle-double-left.highlight
-      Back to articles
+      Back to projects
 
       - if user_signed_in? && @project.user_id == current_user.id
         = link_to edit_project_path(@project), class: "light btn-edit" do

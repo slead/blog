@@ -1,4 +1,4 @@
-%h1#page_title Stuff I've Written
+%h1#page_title Stuff I've Built
 
 .section.group#projects
   .col.span_1_of_4
@@ -10,7 +10,7 @@
           = time_ago_in_words(project.created_at)
           ago
         .content
-          %p= truncate(project.content, length: 150)
+          %p= truncate(project.description, length: 150)
           %p.readmore= link_to "Read more", project
         %hr
   .col.span_1_of_4

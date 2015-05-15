@@ -21,8 +21,15 @@
           
   .col.span_1_of_4.homepage_content
     .content
-      %h2 Stuff I've built
-      %hr.short    
+      %h2= link_to "Stuff I've built", projects_path
+      %hr.short
+      -@projects.each do |project|
+        %h3.title= link_to project.title, project
+        %p.date
+          = time_ago_in_words(project.created_at)
+          ago
+        %p.summary= truncate(project.description, length: 150)
+      %p.more= link_to "See all projects", projects_path
         
       
     
