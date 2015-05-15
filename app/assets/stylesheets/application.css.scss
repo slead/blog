@@ -13,6 +13,10 @@ $highlight: #8bc6db;
   box-sizing: border-box;
 }
 
+li {
+  display: inline;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
@@ -146,11 +150,20 @@ hr.short {
   nav {
     float: right;
     padding-top: 1.4rem;
+    li {
+      list-style: none;
+    }
     a {
       text-decoration: none;
       color: $dark;
       font-size: 1rem;
       margin: 0 1rem;
+    }
+    .current {
+      background-color: $highlight;
+      a {
+        color: #ffffff;
+      }
     }
   }
 }

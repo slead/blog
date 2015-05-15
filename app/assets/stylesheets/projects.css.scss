@@ -1,3 +1,33 @@
 // Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#page_title {
+  /*font-weight: 400;*/
+  text-align: center;
+  padding: 0;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+.project {
+  h4 {
+    margin: 1.6rem 0 0 0;
+    a {
+      color: #8bc6db;
+      &:hover {
+        color: #9a9da4;
+      }
+    }
+  }
+}
+
+#projects {
+  /*Individual projects on the projects index page*/
+  .project {
+    text-align: center;
+    .readmore {
+      color: #727272;
+      font-size: 0.65rem;
+    }
+  }
+}
