@@ -1,35 +1,51 @@
-.section.group
-  .col.span_2_of_4.homepage_content
-    .content
-      %h2 About
-      %hr.short
-      %p Maecenas faucibus mollis Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+#headerwrap
+  .container
+    .row.centered
+      .col-lg-12
+        %h1 Stephen Lead
+        %h3 I like maps and taking photos of things
 
-      %p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+%section{:id => "about", :name => "about"} 
+#intro
+  .container
+    .row
+      .col-lg-2.col-lg-offset-1
+        %h5 ABOUT
+      .col-lg-6
+        %p I'm web designer & front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like branding, icon design or web development.
+
+/ .section.group
+/   .col.span_2_of_4.homepage_content
+/     .content
+/       %h2 About
+/       %hr.short
+/       %p Maecenas faucibus mollis Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+/       %p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
         
-  .col.span_1_of_4.homepage_content
-    .content
-      %h2= link_to "Stuff I've written", posts_path
-      %hr.short
-      -@posts.each do |post|
-        %h3.title= link_to post.title, post
-        %p.date
-          = time_ago_in_words(post.created_at)
-          ago
-        %p.summary= truncate(post.content, length: 150)
-      %p.more= link_to "See all articles", posts_path
+/   .col.span_1_of_4.homepage_content
+/     .content
+/       %h2= link_to "Stuff I've written", posts_path
+/       %hr.short
+/       -@posts.each do |post|
+/         %h3.title= link_to post.title, post
+/         %p.date
+/           = time_ago_in_words(post.created_at)
+/           ago
+/         %p.summary= truncate(post.content, length: 150)
+/       %p.more= link_to "See all articles", posts_path
           
-  .col.span_1_of_4.homepage_content
-    .content
-      %h2= link_to "Stuff I've built", projects_path
-      %hr.short
-      -@projects.each do |project|
-        %h3.title= link_to project.title, project
-        %p.date
-          = time_ago_in_words(project.created_at)
-          ago
-        %p.summary= truncate(project.description, length: 150)
-      %p.more= link_to "See all projects", projects_path
+/   .col.span_1_of_4.homepage_content
+/     .content
+/       %h2= link_to "Stuff I've built", projects_path
+/       %hr.short
+/       -@projects.each do |project|
+/         %h3.title= link_to project.title, project
+/         %p.date
+/           = time_ago_in_words(project.created_at)
+/           ago
+/         %p.summary= truncate(project.description, length: 150)
+/       %p.more= link_to "See all projects", projects_path
         
       
-    
+/     
