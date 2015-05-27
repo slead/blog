@@ -37,12 +37,20 @@
 
     = yield
 
-  %footer#main_footer
-    %p.copyright &copy; 2015 Your Name
-    %nav.social 
-      = link_to "#" do
-        %i.fa.fa-twitter
-      = link_to "#" do
-        %i.fa.fa-linkedin, 
-      = link_to "#" do
-        %i.fa.fa-google-plus
+%section{:id => "contact", :name => "contact"}
+#footwrap
+  .container
+    .row
+      .col-lg-2.col-lg-offset-1
+        %h5 CONTACT
+      .col-lg-6
+        %p I'm web designer & front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like branding, icon design or web development.
+      .col-lg-3
+        %p
+          = link_to "#" do
+            %i.fa.fa-twitter
+          = link_to "#" do
+            %i.fa.fa-linkedin, 
+          = link_to "#" do
+            %i.fa.fa-google-plus
+
