@@ -6,16 +6,17 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     %link{rel: "stylesheet", href: "http://fonts.googleapis.com/css?family=Raleway:400,700"}
     = csrf_meta_tags
-  %body
-    .section.group
-      .col.span_4_of_4
-        %header#main_header.col.span_4_of_4
-          .content
-            = link_to "Your name", root_path,  {class: "name"}
-            %nav 
-              =nav_link "Articles", posts_path
-              =nav_link "Projects", projects_path
-              =nav_link "Contact", contact_path
+  %body{ :data => {:spy => "scroll", :offset => "0", :target => "#nav"}}
+    #section-topbar
+      #topbar-inner
+        .container
+          .row
+            .dropdown
+              %ul#nav.nav
+                %li.menu-item
+                  =nav_link "Articles", posts_path
+                  =nav_link "Projects", projects_path
+                  =nav_link "Contact", contact_path              
 
     .notifications
     - if notice
