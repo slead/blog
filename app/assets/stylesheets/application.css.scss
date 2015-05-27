@@ -1,8 +1,7 @@
 /*
- *= require_tree
- *= require_self
  *= require font-awesome
  */
+<<<<<<< HEAD
 
 $dark: #424652;
 $light: #9a9da4;
@@ -214,3 +213,8 @@ hr.short {
     }
   }
 }
+=======
+ 
+@import 'bootstrap.css';
+@import 'main.css';
+>>>>>>> origin/master
