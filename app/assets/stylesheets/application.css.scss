@@ -2,6 +2,10 @@
  *= require font-awesome
  */
 
+.current {
+  background-color: #727272;
+}
+
 @import 'bootstrap.css';
 @import 'main.css';
 
