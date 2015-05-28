@@ -14,3 +14,5 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+db/backups/2ed4d9f4-9a6a-4c7b-9a70-9058470e0610
