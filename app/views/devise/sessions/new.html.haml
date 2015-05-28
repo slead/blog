@@ -1,7 +1,6 @@
-.section.group
-  .col.span_1_of_4
-  .col.span_2_of_4
-    .content
+.container.top-50
+  .row
+    .col-lg-6-col-lg-offset-4
       %h2 Log in
 
       = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|

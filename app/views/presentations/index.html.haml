@@ -8,8 +8,7 @@
             = time_ago_in_words(presentation.created_at)
             ago
           .content
-            %p= truncate(presentation.description, length: 150)
-            %p.readmore= link_to "Read more", presentation
+            %p= presentation.description
             %iframe{:src => presentation.url, :width => "560", :height => "315"}
           %hr
 
