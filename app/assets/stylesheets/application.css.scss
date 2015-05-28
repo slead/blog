@@ -19,6 +19,18 @@ form {
   margin-bottom: 50px;
 }
 
+.title {
+  text-transform: uppercase;
+}
+
+section .date {
+  font-size: 0.75em;
+}
+
+section h5 {
+  margin-bottom: 0;
+}
+
 @import 'bootstrap.css';
 @import 'main.css';
 

@@ -10,7 +10,7 @@
   .container
     .row
       .col-lg-2.col-lg-offset-1
-        %h5 ABOUT
+        %h4 ABOUT
       .col-lg-6
         %p I'm web designer & front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like branding, icon design or web development.
       .col-lg-3
@@ -23,38 +23,43 @@
   .container.desc
     .row
       .col-lg-2.col-lg-offset-1
-        %h5 ARTICLES
+        %h4
+          =link_to "ARTICLES", posts_path
       .col-lg-8
         -@posts.each do |post|
-          %h3.title= link_to post.title, post
+          %h5.title=link_to post.title, post
           %p.date
             = time_ago_in_words(post.created_at)
             ago
           %p.summary= truncate(post.content, length: 150)
+          %p.more=link_to "more", post
         %p.more= link_to "See all articles", posts_path
 
 %section{:id => "projects", :name => "projects"} 
   .container.desc
     .row
       .col-lg-2.col-lg-offset-1
-        %h5 PROJECTS
+        %h4
+          =link_to "PROJECTS", projects_path
       .col-lg-8
         -@projects.each do |project|
-          %h3.title= link_to project.title, project
+          %h5.title=link_to project.title, project
           %p.date
             = time_ago_in_words(project.created_at)
             ago
           %p.summary= truncate(project.description, length: 150)
+          %p.more=link_to "more", project
         %p.more= link_to "See all projects", projects_path
 
 %section{:id => "presentations", :name => "presentations"} 
   .container.desc
     .row
       .col-lg-2.col-lg-offset-1
-        %h5 PRESENTATIONS
+        %h4
+          =link_to "PRESENTATIONS", presentations_path
       .col-lg-8
         -@presentations.each do |presentation|
-          %h3.title= link_to presentation.title, presentation
+          %h5.title=link_to presentation.title, presentation
           %p.date
             = time_ago_in_words(presentation.created_at)
             ago
