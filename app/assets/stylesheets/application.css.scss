@@ -21,22 +21,28 @@
   max-width: 100%;
 }
 
+.readmore {
+  margin-left: 15px;
+  font-size: 0.80em;
+}
+
 form {
   margin-bottom: 50px;
 }
 
 .title {
   text-transform: uppercase;
-}
-
-section .date {
-  font-size: 0.75em;
-}
-
-section h5 {
   margin-bottom: 0;
 }
 
+.date {
+  font-size: 0.75em;
+}
+
+/*section h5 {
+  margin-bottom: 0;
+}
+*/
 iframe {
   min-height: 600px;
   width: 100%;

@@ -8,8 +8,9 @@
             = time_ago_in_words(project.created_at)
             ago
           .content
-            %p= truncate(project.description, length: 150)
-            %p.readmore= link_to "Read more", project
+            %p
+              =truncate(project.description, length: 150)
+              %span.readmore= link_to "more", project
           %hr
 
 - if user_signed_in?
