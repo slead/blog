@@ -79,6 +79,9 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {host: "https://mighty-mountain-2037.herokuapp.com"}
   config.action_mailer.delivery_method = :smtp
 
+  # Google Analytics
+  GA.tracker = "UA-26873294-1"
+
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
     :port           => '587',
