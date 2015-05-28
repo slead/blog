@@ -1,12 +1,12 @@
 .section.group#presentations
   .col.span_1_of_4
   .col.span_2_of_4
-    .content.single_presentation
+    .description.single_presentation
       %h4= @presentation.title
-      %p= markdown @presentation.content
+      %p= markdown @presentation.description
     = link_to presentations_path, class: "btn" do
       %i.fa.fa-angle-double-left.highlight
-      Back to articles
+      Back to Presentations
 
       - if user_signed_in? && @presentation.user_id == current_user.id
         = link_to edit_presentation_path(@presentation), class: "light btn-edit" do

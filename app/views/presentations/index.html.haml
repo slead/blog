@@ -4,13 +4,13 @@
     - @presentations.each do |presentation|
       .row
         .col-lg-6-col-lg-offset-4
-          .presentation.content
+          .presentation.description
             %h4= link_to presentation.title, presentation
             %span.date
               = time_ago_in_words(presentation.created_at)
               ago
-            .content
-              %p= truncate(presentation.content, length: 150)
+            .description
+              %p= truncate(presentation.description, length: 150)
               %p.readmore= link_to "Read more", presentation
             %hr
 
