@@ -45,3 +45,18 @@
             ago
           %p.summary= truncate(project.description, length: 150)
         %p.more= link_to "See all projects", projects_path
+%hr
+
+%section{:id => "presentations", :name => "presentations"} 
+  .container.desc
+    .row
+      .col-lg-2.col-lg-offset-1
+        %h5 PRESENTATIONS
+      .col-lg-8
+        -@presentations.each do |presentation|
+          %h3.title= link_to presentation.title, presentation
+          %p.date
+            = time_ago_in_words(presentation.created_at)
+            ago
+          %p.summary= truncate(presentation.description, length: 150)
+        %p.more= link_to "See all presentations", presentations_path
