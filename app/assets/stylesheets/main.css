@@ -24,6 +24,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
 }
 
+h3 {
+  margin-top: 5px;
+}
+
 
 /* Paragraph & Typographic */
 p {
@@ -192,12 +196,11 @@ a:after {
 	color: white;
 } 
 
-#intro h5, p {
+#intro h5, #intro p {
 	color: white;
 }
 
 #intro i {
-	color: white;
 	font-size: 20px;
 	padding-right: 8px;
 	vertical-align: middle;
@@ -206,7 +209,7 @@ a:after {
 
 #projects {
 	background: #ddeaf6;
-	padding-top: 60px;
+/*	padding-top: 60px;*/
 	padding-bottom: 60px;
 	color: white;
 }

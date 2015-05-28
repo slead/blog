@@ -1,20 +1,20 @@
-.section.group#projects
-  .col.span_1_of_4
-  .col.span_2_of_4
-    - @projects.each do |project|
-      .project.content
-        %h4= link_to project.title, project
-        %span.date
-          = time_ago_in_words(project.created_at)
-          ago
-        .content
-          %p= truncate(project.description, length: 150)
-          %p.readmore= link_to "Read more", project
-        %hr
-  .col.span_1_of_4
+.container.index
+  - @projects.each do |project|
+    .row
+      .col-lg-6-col-lg-offset-4
+        .project.content
+          %h4= link_to project.title, project
+          %span.date
+            = time_ago_in_words(project.created_at)
+            ago
+          .content
+            %p= truncate(project.description, length: 150)
+            %p.readmore= link_to "Read more", project
+          %hr
 
 - if user_signed_in?
-  = link_to destroy_user_session_path, method: :delete, class: "light btn-user" do
-    %i.fa.fa-user
-  = link_to new_project_path, class: "light btn-edit" do
-    %i.fa.fa-pencil-square-o
+  #me
+    = link_to destroy_user_session_path, method: :delete, class: "light btn-user" do
+      %i.fa.fa-user
+    = link_to new_project_path, class: "light btn-edit" do
+      %i.fa.fa-pencil-square-o

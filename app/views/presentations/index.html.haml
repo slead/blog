@@ -1,21 +1,20 @@
-.clear
-%section{:id => "presentations", :name => "presentations"} 
-  .container.desc
-    - @presentations.each do |presentation|
-      .row
-        .col-lg-6-col-lg-offset-4
-          .presentation.description
-            %h4= link_to presentation.title, presentation
-            %span.date
-              = time_ago_in_words(presentation.created_at)
-              ago
-            .description
-              %p= truncate(presentation.description, length: 150)
-              %p.readmore= link_to "Read more", presentation
-            %hr
+.container.index
+  - @presentations.each do |presentation|
+    .row
+      .col-lg-6-col-lg-offset-4
+        .presentation.content
+          %h4= link_to presentation.title, presentation
+          %span.date
+            = time_ago_in_words(presentation.created_at)
+            ago
+          .content
+            %p= truncate(presentation.description, length: 150)
+            %p.readmore= link_to "Read more", presentation
+          %hr
 
 - if user_signed_in?
-  = link_to destroy_user_session_path, method: :delete, class: "light btn-user" do
-    %i.fa.fa-user
-  = link_to new_presentation_path, class: "light btn-edit" do
-    %i.fa.fa-pencil-square-o
+  #me
+    = link_to destroy_user_session_path, method: :delete, class: "light btn-user" do
+      %i.fa.fa-user
+    = link_to new_project_path, class: "light btn-edit" do
+      %i.fa.fa-pencil-square-o
