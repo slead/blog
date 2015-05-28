@@ -3,7 +3,7 @@
     .row
       .col-lg-6-col-lg-offset-4
         .project.content
-          %h4= link_to project.title, project
+          %h4.title= link_to project.title, project
           %span.date
             = time_ago_in_words(project.created_at)
             ago

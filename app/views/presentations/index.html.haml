@@ -3,7 +3,7 @@
     .row
       .col-lg-6-col-lg-offset-4
         .presentation.content
-          %h4= link_to presentation.title, presentation
+          %h4.title= link_to presentation.title, presentation
           %span.date
             = time_ago_in_words(presentation.created_at)
             ago

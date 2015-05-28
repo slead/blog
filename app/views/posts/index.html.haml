@@ -3,7 +3,7 @@
     .row
       .col-lg-6-col-lg-offset-4
         .post.content
-          %h4= link_to post.title, post
+          %h4.title= link_to post.title, post
           %span.date
             = time_ago_in_words(post.created_at)
             ago

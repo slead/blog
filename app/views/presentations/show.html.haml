@@ -1,7 +1,7 @@
 .row.top-50
   .col-lg-8.col-lg-offset-2
     .content.single_presentation
-      %h4= @presentation.title
+      %h4.title= @presentation.title
       %p= markdown @presentation.description
 
     = link_to presentations_path, class: "btn" do
