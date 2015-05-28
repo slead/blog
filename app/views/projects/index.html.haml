@@ -1,9 +1,9 @@
 .container.top-50
   - @projects.each do |project|
     .row
-      .col-lg-2
+      .col-lg-2.col-lg-offset-1
         =image_tag project.image
-      .col-lg-8.col-lg-offset-1
+      .col-lg-7.col-lg-offset-1
         .project.content
           %h4.title= link_to project.title, project
           %span.date
