@@ -4,6 +4,7 @@
       .content.single_presentation
         %h4.title= @presentation.title
         %p= markdown @presentation.description
+        %iframe{:src => @presentation.url, :width => "560", :height => "315"}
 
       = link_to presentations_path, class: "btn" do
         %i.fa.fa-angle-double-left.highlight

@@ -31,6 +31,11 @@ section h5 {
   margin-bottom: 0;
 }
 
+iframe {
+  min-height: 600px;
+  width: 100%;
+}
+
 #notice_wrapper, #alert_wrapper {
   position: absolute;
   top: 54px;

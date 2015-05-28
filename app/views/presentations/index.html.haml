@@ -10,6 +10,7 @@
           .content
             %p= truncate(presentation.description, length: 150)
             %p.readmore= link_to "Read more", presentation
+            %iframe{:src => presentation.url, :width => "560", :height => "315"}
           %hr
 
 - if user_signed_in?
