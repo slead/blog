@@ -32,8 +32,9 @@
           %p.date
             = time_ago_in_words(post.created_at)
             ago
-          %p.summary= truncate(post.content, length: 150)
-          %p.more=link_to "more", post
+          %p.summary
+            =truncate(post.content, length: 150)
+            %span.readmore= link_to "more", post
           %hr
         %p.more= link_to "See all articles", posts_path
 
@@ -49,8 +50,9 @@
           %p.date
             = time_ago_in_words(project.created_at)
             ago
-          %p.summary= truncate(project.description, length: 150)
-          %p.more=link_to "more", project
+          %p.summary
+            =truncate(project.description, length: 150)
+            %span.readmore= link_to "more", project
         %p.more= link_to "See all projects", projects_path
 
 %section{:id => "presentations", :name => "presentations"} 
