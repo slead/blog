@@ -1,6 +1,6 @@
-.container.top-50
+.container.top-100
   - @projects.each do |project|
-    .row
+    .row.top-50
       .col-lg-2.col-lg-offset-1
         =image_tag project.image
       .col-lg-7.col-lg-offset-1
@@ -13,7 +13,7 @@
             %p
               =truncate(project.description, length: 150)
               %span.readmore= link_to "more", project
-          %hr
+    %hr
 
 - if user_signed_in?
   #me
