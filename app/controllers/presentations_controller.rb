@@ -48,7 +48,7 @@ class PresentationsController < ApplicationController
   private
 
   def presentation_params
-    params.require(:presentation).permit(:title, :description, :image, :url)
+    params.require(:presentation).permit(:title, :description, :url)
   end
 
   def find_presentation
