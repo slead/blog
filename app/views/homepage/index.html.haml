@@ -30,7 +30,6 @@
             ago
           %p.summary= truncate(post.content, length: 150)
         %p.more= link_to "See all articles", posts_path
-%hr
 
 %section{:id => "projects", :name => "projects"} 
   .container.desc
@@ -45,7 +44,6 @@
             ago
           %p.summary= truncate(project.description, length: 150)
         %p.more= link_to "See all projects", projects_path
-%hr
 
 %section{:id => "presentations", :name => "presentations"} 
   .container.desc
