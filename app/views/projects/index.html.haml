@@ -2,7 +2,7 @@
   - @projects.each do |project|
     .row.top-50
       .col-lg-4.col-lg-offset-1
-        =image_tag project.image
+        =image_tag project.image, {:class => "shadow"}
       .col-lg-6.col-lg-offset-1
         .project.content
           %h4.title= link_to project.title, project

@@ -23,6 +23,10 @@
 
 img {
   max-width: 100%;
+  .shadow {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #888888;
+  }
 }
 
 .readmore {
