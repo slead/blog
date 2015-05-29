@@ -20,6 +20,7 @@ gem 'mail_form', '~> 1.5.1'
 gem 'font-awesome-rails', '~> 4.3.0.0'
 gem "twitter-bootstrap-rails"
 gem 'google-analytics-rails'
+gem "paperclip", "~> 4.2"
 
 group :development do
   gem 'sqlite3'
