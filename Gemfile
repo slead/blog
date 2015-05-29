@@ -21,7 +21,6 @@ gem 'font-awesome-rails', '~> 4.3.0.0'
 gem "twitter-bootstrap-rails"
 gem 'google-analytics-rails'
 gem "paperclip", "~> 4.2"
-gem 'aws-sdk', '< 2.0'
 
 group :development do
   gem 'sqlite3'
