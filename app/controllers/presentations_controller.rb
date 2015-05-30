@@ -3,7 +3,7 @@ class PresentationsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @presentations = Presentation.all
+    @presentations = Presentation.all.order('created_at DESC')
   end
 
   def new
