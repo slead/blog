@@ -292,10 +292,13 @@ a:after {
   vertical-align: middle;
 }
 
-
 #projects {
   background: #ddeaf6;
   color: white;
+  .pad {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
 }
 
 #footwrap {
