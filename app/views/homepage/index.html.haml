@@ -46,16 +46,16 @@
           =link_to "PROJECTS", projects_path
     -@projects.each do |project|
       .row.pad
-        .col-lg-4
+        .col-lg-6
           - if project.image?
             =image_tag project.image, {:class => "shadow"}
-        .col-lg-6.col-lg-offset-1
+        .col-lg-4.col-lg-offset-1
           %h5.title=link_to project.title, project
           %p.date
             = time_ago_in_words(project.created_at)
             ago
           %p.summary
-            =truncate(project.description, length: 150)
+            =truncate(project.description, length: 500)
             %span.readmore= link_to "more", project
     .row
       .col-lg-6.col-lg-offset-3
