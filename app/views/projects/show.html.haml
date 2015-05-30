@@ -6,9 +6,8 @@
     .col-lg-6.col-lg-offset-1
       .content.single_project
         %h4.title
-          = @project.title
-          - if @project.url?
-            %span.readmore= link_to "visit site", @project.url
+          = link_to @project.title, @project.url
+          %span.readmore= link_to "(visit site)", @project.url
         %p= markdown @project.description
 
       = link_to projects_path, class: "btn" do
