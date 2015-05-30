@@ -44,8 +44,12 @@
       .col-lg-2.col-lg-offset-1
         %h4
           =link_to "PROJECTS", projects_path
-      .col-lg-8
-        -@projects.each do |project|
+    -@projects.each do |project|
+      .row
+        .col-lg-3.col-lg-offset-3
+          - if project.image?
+            =image_tag project.image, {:class => "shadow"}
+        .col-lg-6
           %h5.title=link_to project.title, project
           %p.date
             = time_ago_in_words(project.created_at)
@@ -53,6 +57,8 @@
           %p.summary
             =truncate(project.description, length: 150)
             %span.readmore= link_to "more", project
+    .row
+      .col-lg-6.col-lg-offset-3
         %p.more= link_to "See all projects", projects_path
 
 %section{:id => "presentations", :name => "presentations"} 
