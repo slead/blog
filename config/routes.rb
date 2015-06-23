@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :presentations
   resources :contacts, only: [:new, :create]
 
-  match '/contact' => "contacts#new", via: [:get, :post]
+  match '/contact' => "contacts#new", via: [:get, :post], as: :contact 
   
   root 'homepage#index'
 end
