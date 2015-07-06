@@ -13,7 +13,7 @@
             ago
           .content
             %p
-              =truncate(project.description, length: 250)
+              =markdown(truncate(project.description, length: 250))
               %span.readmore= link_to "more", project
     %hr
 

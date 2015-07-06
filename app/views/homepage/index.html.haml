@@ -33,7 +33,7 @@
             = time_ago_in_words(post.created_at)
             ago
           %p.summary
-            =truncate(post.content, length: 150)
+            =markdown(truncate(post.content, length: 150))
             %span.readmore= link_to "more", post
           %hr
         %p.more= link_to "See all articles", posts_path
@@ -56,7 +56,7 @@
             = time_ago_in_words(project.created_at)
             ago
           %p.summary
-            =truncate(project.description, length: 500)
+            =markdown(truncate(project.description, length: 500))
             %span.readmore= link_to "more", project
     .row
       .col-lg-6.col-lg-offset-3
