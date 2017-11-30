@@ -16,7 +16,6 @@ gem 'omniauth', '~> 1.2.2'
 gem 'omniauth-twitter', '~> 1.2.0'
 gem 'simple_form', '~> 3.1.0'
 gem 'redcarpet', '~> 3.2.3'
-gem 'pygments.rb', '~> 0.6.3'
 gem 'friendly_id', '~> 5.1.0'
 gem 'mail_form', '~> 1.5.1'
 gem 'font-awesome-rails', '~> 4.3.0.0'
@@ -28,6 +27,6 @@ group :development do
   gem 'byebug'
 end
 
-group :production do 
+group :production do
   gem 'rails_12factor'
 end
