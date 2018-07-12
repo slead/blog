@@ -6,21 +6,21 @@
         %h1 Stephen Lead
         %h3 I like maps, code, presentations and demos
 
-%section{:id => "about", :name => "about"} 
+%section{:id => "about", :name => "about"}
 #intro
   .container
     .row
       .col-lg-2.col-lg-offset-1
         %h4 ABOUT
       .col-lg-6
-        %p I'm a GIS expert, specialising in ArcGIS Desktop and ArcGIS Server, including building enterprise applications on the ArcGIS Server JS API. I also develop in Python, JavaScript and Rails. In my spare time I'm the producer of <a target="_blank" href="http://www.ignitesydney.com">Ignite Sydney</a>.
+        %p I'm a GIS expert, specialising in ArcGIS Server, including building enterprise applications on the ArcGIS Server JS API, and open source geo-tools including GeoServer and Leaflet. I also develop in Ruby On Rails, Python and JavaScript. In my spare time I'm the producer of <a target="_blank" href="http://www.ignitesydney.com">Ignite Sydney</a>.
       .col-lg-3
         %p
           = link_to "https://www.dropbox.com/s/m2poi1xncsk19w4/StephenLead.pdf?dl=0" do
             %i.fa.fa-file-o
             Download resume
 
-%section{:id => "articles", :name => "articles"} 
+%section{:id => "articles", :name => "articles"}
   .container.desc
     .row
       .col-lg-2.col-lg-offset-1
@@ -38,7 +38,7 @@
           %hr
         %p.more= link_to "See all articles", posts_path
 
-%section{:id => "projects", :name => "projects"} 
+%section{:id => "projects", :name => "projects"}
   .container.desc
     .row
       .col-lg-2.col-lg-offset-1
@@ -49,7 +49,7 @@
         .col-lg-6
           - if project.image?
             = link_to project.url do
-              =image_tag project.image, {:class => "shadow"}            
+              =image_tag project.image, {:class => "shadow"}
         .col-lg-4.col-lg-offset-1
           %h5.title=link_to project.title, project.url
           %p.date
@@ -62,7 +62,7 @@
       .col-lg-6.col-lg-offset-3
         %p.more= link_to "See all projects", projects_path
 
-%section{:id => "presentations", :name => "presentations"} 
+%section{:id => "presentations", :name => "presentations"}
   .container.desc
     .row
       .col-lg-2.col-lg-offset-1
