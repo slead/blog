@@ -9,142 +9,147 @@
 
 <url>
   <loc>http://www.stephenlead.com/</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/presentations</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/posts</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/weather-reporter</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/a-map-centric-travel-blog-for-photograhers</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/bootleaf-an-open-source-mapping-framework-based-on-leaflet</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/presentations/bootleaf-at-foss4g-oceania</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/presentations/2-wheels-good-why-you-should-ride-a-motorcycle</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/presentations/why-it-s-insane-to-purchase-water-in-a-bottle</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.stephenlead.com/posts/how-to-use-handlebars-js-templating-with-the-arcgis-server-javascript-api</loc>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/posts/using-geoserver-as-the-source-for-a-type-ahead</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/posts/show-a-loading-indicator-in-the-arcgis-javascript-api-v4</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.stephenlead.com/posts/create-a-simple-widget-in-the-arcgis-server-javascript-api-version-4</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/contact</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/ignite-global-website</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/ignite-sydney-website</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/atlas-of-nsw</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/coffee-and-power</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/google-fusion-tables-for-52suburbs-com</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/google-maps-for-ignite-sydney</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/australian-climate-explorer</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/geoportal-genie</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/projects/nsw-coastal-explorer</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/presentations/how-to-give-a-kick-ass-demo</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/presentations/notes-from-a-grateful-dickhead</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.stephenlead.com/posts/create-a-simple-widget-in-the-arcgis-server-javascript-api-version-4</loc>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/posts/what-are-some-challenges-that-developers-face</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/posts/a-request-for-tender-is-like-a-speed-date</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>http://www.stephenlead.com/posts/why-you-should-give-a-lightning-presentation</loc>
-  <lastmod>2019-02-06T08:26:40+00:00</lastmod>
+  <lastmod>2019-03-13T08:19:35+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
