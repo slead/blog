@@ -20,6 +20,24 @@
             %i.fa.fa-file-o
             Download resume
 
+%section{:id => "articles", :name => "articles"}
+  .container.desc
+    .row
+      .col-lg-2.col-lg-offset-1
+        %h4
+          =link_to "ARTICLES", posts_path
+      .col-lg-8
+        -@posts.each do |post|
+          %h5.title=link_to post.title, post
+          %p.date
+            = time_ago_in_words(post.created_at)
+            ago
+          %p.summary
+            =markdown(truncate(post.content, length: 150))
+            %span.readmore= link_to "more", post
+          %hr
+        %p.more= link_to "See all articles", posts_path
+
 %section{:id => "projects", :name => "projects"}
   .container.desc
     .row
@@ -59,21 +77,3 @@
           %p.summary= presentation.description
           %iframe{:src => presentation.url, :width => "400", :height => "225"}
         %p.more= link_to "See all presentations", presentations_path
-
-%section{:id => "articles", :name => "articles"}
-  .container.desc
-    .row
-      .col-lg-2.col-lg-offset-1
-        %h4
-          =link_to "ARTICLES", posts_path
-      .col-lg-8
-        -@posts.each do |post|
-          %h5.title=link_to post.title, post
-          %p.date
-            = time_ago_in_words(post.created_at)
-            ago
-          %p.summary
-            =markdown(truncate(post.content, length: 150))
-            %span.readmore= link_to "more", post
-          %hr
-        %p.more= link_to "See all articles", posts_path
