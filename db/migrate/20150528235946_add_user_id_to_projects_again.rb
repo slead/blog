@@ -1,4 +1,4 @@
-class AddUserIdToProjectsAgain < ActiveRecord::Migration
+class AddUserIdToProjectsAgain < ActiveRecord::Migration[5.2]
   def change
     add_column :projects, :user_id, :integer
   end
